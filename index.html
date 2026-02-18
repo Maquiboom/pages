@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maquiboom Systems</title>
+
+<style>
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#0d1117;
+    color:white;
+    overflow-x:hidden;
+}
+
+header{
+    text-align:center;
+    padding:40px;
+    background:linear-gradient(90deg,#0d1117,#0f2a44);
+    box-shadow:0 0 20px #007bff55;
+}
+
+h1{
+    color:#00aaff;
+    font-size:3rem;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{ text-shadow:0 0 10px #00aaff;}
+    to{ text-shadow:0 0 25px #0088ff;}
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding:40px;
+}
+
+.card{
+    background:#161b22;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 0 15px #007bff33;
+    transition:0.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00aaff;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    width:200%;
+    height:200%;
+    background:linear-gradient(45deg,transparent,#007bff22,transparent);
+    transform:rotate(45deg);
+    animation:shine 6s infinite;
+}
+
+@keyframes shine{
+    from{ left:-100%; }
+    to{ left:100%; }
+}
+
+button{
+    background:#007bff;
+    border:none;
+    padding:10px 20px;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#00aaff;
+    box-shadow:0 0 15px #00aaff;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0f2a44;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🌌 Las páginas web de Maquiboom Systems</h1>
+    <p>Explora estas plataformas increíbles</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Maquiboom Systems</h2>
+<p>La página principal de Maquiboom Systems.</p>
+<button onclick="window.open('https://maquiboom.github.io/Maquiboom-systems')">Visitar</button>
+</div>
+
+<div class="card">
+<h2>Code-Generator</h2>
+<p>Generador de código para múltiples lenguajes.</p>
+<button onclick="window.open('https://maquiboom.github.io/Code-Generator')">Visitar</button>
+</div>
+
+<div class="card">
+<h2>GoldBot</h2>
+<p>Bot que busca información en internet directamente para ti.</p>
+<button onclick="window.open('https://maquiboom.github.io/GoldBot')">Visitar</button>
+</div>
+
+<div class="card">
+<h2>Inmortal</h2>
+<h2>La página web del mejor servidor de minecraft</h2>
+<p>Inmortal es un servidor de minecraft con una comunidad increíble y un staff aún mejor.</p>
+<button onclick="window.open('https://maquiboom.github.io/inmortal')">Visitar</button>
+</div>
+
+
+
+<div class="card">
+<h2>IDIOT</h2>
+<p>Una broma tecnológica.</p>
+<button onclick="window.open('https://maquiboom.github.io/IDIOT')">Visitar</button>
+</div>
+
+<footer>
+    © 2026 Maquiboom Systems | Made by Maquiboom 💻
+</footer>
+
+</body>
+</html>
